@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AimController : MonoBehaviour
 {
-
+    // to create variable used to aim at target
     private AimComponent m_aimCompoent = null;
 
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class AimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // updtaes users imput
         HandleUserInput();
     }
 
@@ -25,28 +26,28 @@ public class AimController : MonoBehaviour
         // launch projectile
         if (Input.GetKey(KeyCode.Space))
         {
-            // launch
+            // launch - launcnes the ball attached to aim component
             m_aimCompoent.OnLauchProjectile();
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            // move left
+            // moves aim component left
             m_aimCompoent.moveLeft(0.1f);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            // move right
+            // move aim component right
             m_aimCompoent.moveRight(0.1f);
         }
         if (Input.GetKey(KeyCode.W))
         {
-            // move up
+            // move aim component forward
             m_aimCompoent.moveForwad(0.1f);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            // move down
+            // move aim component down
             m_aimCompoent.moveBack(0.1f);
         }
         if (Input.GetKey(KeyCode.R))

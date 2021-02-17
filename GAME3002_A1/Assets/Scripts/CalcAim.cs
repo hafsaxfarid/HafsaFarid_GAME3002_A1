@@ -15,8 +15,6 @@ namespace CalculationTools
 
                 return fVal;
             }
-
-
             return 0.0f;
         }
 
