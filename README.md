@@ -5,9 +5,9 @@
 Player Controls
 ----------------------
 A - Move aim display to left
-S - Move aim display forwards
+S - Move aim display backwards
 D - Move aim display to right
-W - Move aim display backwards
+W - Move aim display forward
 
 SpaceBar - To launch ball
 
